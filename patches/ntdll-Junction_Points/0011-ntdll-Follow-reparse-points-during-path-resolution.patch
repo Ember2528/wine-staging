@@ -231,10 +231,9 @@ index 907d51f1fc3..d520a73b253 100644
  
 +    fchdir( old_cwd );
 +    free( name_buf );
-+
++    close ( old_cwd );
      return status;
  }
  
 -- 
 2.35.1
-
